@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(to right, rgba(150, 36, 218, 0.45), rgba(101, 245, 181, 0.45));
+}
+#login{
+    border-radius: 15px 50px;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 500px;
+    font-size: 30px;
+    margin-top: 15%;
+    background-image: linear-gradient(to right, rgba(36, 238, 145, 0.15), rgba(44, 255, 12, 0.15));
+    padding: 40px 50px;
+}
+#login h1{
+    color: #fff;
+}
+#login .input{
+    width:180px;
+    font-size:18px;
+    border:0;
+    border-bottom:2px solid rgba(229, 210, 33, 0.96);
+    padding:5px 10px;
+    background:#ffffff00;
+    color:#fff;
+}
+#login #Send{
+    width: 180px;
+    font-size: 20px;
+    background-image: linear-gradient(to left, rgba(243, 201, 58, 0.32), rgba(234, 243, 57, 0.32));
+    border-radius: 10px 10px 10px 10px;
+}
+#login #Send:hover{
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(-0.5,-1,.95,0.88);
+    transition-delay: 10ms;
+    transform: scale(0.85);
+}
