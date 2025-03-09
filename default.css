@@ -103,7 +103,7 @@ body{
     border-bottom: 2px solid #9ffff1;
     position: relative;
     width: 15%;
-}
+}/*关于这个feel我也不知道用在哪里了*/
 .foot {
     position: fixed;
     bottom: 0;
@@ -219,26 +219,4 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-/*等级颜色*/
-.fa{
-    color:#EC3535;
-}
-.f{
-    color:#E40081;
-}
-.d{
-    color:#AA4BC8;
-}
-.c{
-    color:#4372FF;
-}
-.b{
-    color:#559BC0;
-}
-.a{
-    color:#08C1C1;
-}
-.s{
-    color:#38B20A;
 }
