@@ -166,6 +166,8 @@ h3{
 }
 p{
     color: #FFF9F9;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 embed{
     z-index: 0;
