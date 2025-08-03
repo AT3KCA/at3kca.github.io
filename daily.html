@@ -2,78 +2,57 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>AT3K_CA 的 日志</title>
-    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="css/page.css">
     <script src="/html_util.js"></script>
+    <title>Title</title>
 </head>
 <body>
-<!-- div:
-<div style="border: 1px solid black;">
-	<h3>Time(yyyy:mm:dd)</h3>
-	<p>text</p>
+<div class="background"></div>
+<div class="gen_container">
+    <div class="header">
+        <div class="style0 none_select">
+            <a target="_blank" href="https://space.bilibili.com/1856254417">AT3K_CA</a>
+        </div>
+        <div class="style1">
+            <a target="_blank" href="https://space.bilibili.com/1856254417">日志</a>
+        </div>
+        <div class="style1">
+            <a target="_blank" href="https://space.bilibili.com/1856254417">文档</a>
+        </div>
+        <div class="style1">
+            <a target="_blank" href="https://space.bilibili.com/1856254417">关于</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="row0">
+            <div class="card0">
+                <img src="./images/head.jpg" alt="似乎没有显示出来呢">
+                <p class="shadow-text">非常感谢!</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="box">
+                <a class="title style1">
+                    <h3>日志列表</h3>
+                </a>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2024-10.htp')" href="#">[Daily-2024-10]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2024-11.htp')" href="#">[Daily-2024-11]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2024-12.htp')" href="#">[Daily-2024-12]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-1.htp')" href="#">[Daily-2025-1]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-2.htp')" href="#">[Daily-2025-2]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-3.htp')" href="#">[Daily-2025-3]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-4.htp')" href="#">[Daily-2025-4]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-5.htp')" href="#">[Daily-2025-5]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-6.htp')" href="#">[Daily-2025-6]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-7.htp')" href="#">[Daily-2025-7]</a></p>
+                <p class="shadow-text"><a onclick="load_text('daily/daily-2025-8.htp')" href="#">[Daily-2025-8]</a></p>
+
+            </div>
+            <div id="boxs">
+
+            </div>
+        </div>
+    </div>
 </div>
- -->
-<canvas id="canvas">抱歉，你的浏览器不支持 canvas 元素
-    （这些内容将会在不支持&lt;canvas%gt;元素的浏览器或是禁用了 JavaScript
-    的浏览器内渲染并展现）
-</canvas>
-<p class="back"><a href="index.html">[返回]</a></p>
-<div class="root">
-    <div class="head_as">
-        <p>AT3K_CA</p>
-        <a href="index.html">主页</a>
-        <a href="daily.html">日志</a>
-        <a href="misc.html">杂项</a>
-        <a href="sf.html">自我</a>
-    </div>
-    <p>这里是日志导航</p>
-    <p>如果音乐卡片不能正确显示,请使用电脑浏览</p>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2024-8.htp')" href="#">[Daily-2024-8]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2024-9.htp')" href="#">[Daily-2024-9]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2024-10.htp')" href="#">[Daily-2024-10]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2024-11.htp')" href="#">[Daily-2024-11]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2024-12.htp')" href="#">[Daily-2024-12]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-1.htp')" href="#">[Daily-2025-1]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-2.htp')" href="#">[Daily-2025-2]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-3.htp')" href="#">[Daily-2025-3]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-4.htp')" href="#">[Daily-2025-4]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-5.htp')" href="#">[Daily-2025-5]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-6.htp')" href="#">[Daily-2025-6]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-7.htp')" href="#">[Daily-2025-7]</a></p>
-    </div>
-    <div class="box">
-        <p><a onclick="load_text('daily/daily-2025-8.htp')" href="#">[Daily-2025-8]</a></p>
-    </div>
-    <div id="boxs"></div>
-</div>
-<div class="foot">
-    <p id="in">AT3K_CA copyright</p>
-    <button id="render">Render</button>
-    <button id="down">Down</button>
-</div>
-<script src="/particle.js"></script>
 </body>
 </html>
