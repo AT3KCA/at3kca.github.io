@@ -7,6 +7,11 @@ a {
 }
 p{
     white-space: pre-wrap;
+    user-select: none;
+    transition: all 0.3s;
+}
+p:hover{
+    text-shadow: #f3ff7bcc 1px 0 5px;
 }
 .background {
     position: fixed;
@@ -148,8 +153,8 @@ p{
 }
 
 
-#boxs img {
-    max-width: 100%;
+.box-img{
+    max-width: 95%;
 }
 #boxs p{
     user-select: none;
@@ -175,18 +180,15 @@ p{
     font-size: 19px;
 }
 
-.shadow-text{
-    user-select: none;
-    transition: all 0.3s;
+.select-p{
+    user-select: text;
 }
-.shadow-text:hover{
-    text-shadow: #f3ff7bcc 1px 0 5px;
-}
-.shadow-text a{
+
+p a{
     color: #5eda85;
     transition: all 0.3s;
 }
-.shadow-text a:hover{
+p a:hover{
     color: #e0d55b;
     font-size: 19px;
 }
