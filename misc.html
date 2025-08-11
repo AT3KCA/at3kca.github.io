@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>AT3K_CA 的 网络经历</title>
-    <link rel="stylesheet" href="default.css">
-    <script src="html_util.js"></script>
+    <link rel="stylesheet" href="css/page.css">
+    <script src="/html_util.js"></script>
+    <title>Misc</title>
 </head>
 <body>
-<canvas id="canvas">抱歉，你的浏览器不支持 canvas 元素
-    （这些内容将会在不支持&lt;canvas%gt;元素的浏览器或是禁用了 JavaScript
-    的浏览器内渲染并展现）</canvas>
-<p class="back"><a href="index.html">[返回]</a></p>
-<p>会转一些喜欢的作品,侵权删除</p>
-<p>如果音乐卡片不能正确显示,请使用电脑浏览</p>
-<div class="root">
-    <div class="head_as">
-        <p>AT3K_CA</p>
-        <a href="index.html">主页</a>
-        <a href="daily.html">日志</a>
-        <a href="misc.html">杂项</a>
-        <a href="sf.html">自我</a>
+<div class="background"></div>
+<div class="gen_container">
+    <div class="header">
+        <div class="style0 none_select">
+            <a href="index.html">AT3K_CA</a> # <a target="_blank" href="https://space.bilibili.com/1856254417">Bilibili</a>
+        </div>
+        <div class="style1">
+            <a href="daily.html">Daily</a>
+        </div>
+        <div class="style1">
+            <a href="AnotherWorld.html">Anime Girls</a>
+        </div>
+        <div class="style1">
+            <a href="misc.html">Misc</a>
+        </div>
+        <div class="style1">
+            <a target="_blank" href="https://space.bilibili.com/1856254417">About</a>
+        </div>
     </div>
-    <div class="box">
-        <h3><a href="https://www.bilibili.com/video/BV1JRndeKEm3">〖速涂〗“哇！我的同学是防暴警察！”</a> - <a href="https://space.bilibili.com/593602685">名叫小雪的孩子</a></h3>
-        <p>其实源作品是个视频,不过图画的也很棒,索性就直接搬过来了,之后可能截一些有代表性的图放在这里面吧,尽量从源网站那边src</p>
-        <p>因为我懒得上传图</p>
-        <p>不过作者画的作品还是超可爱的</p>
-        <p>这件事可以说是略显抽象</p>
-    </div>
-    <div class="box">
-        <h3><a href="https://www.bilibili.com/video/BV19x411c7RP">【PV】promise／広瀬香美</a> - <a href="https://www.bilibili.com/video/BV19x411c7RP">Bilibili</a></h3>
-        <p>Get☆Down</p>
-        <p>试着了解了一下这个梗的背景音乐</p>
-        <p>生草程度远超我的想象</p>
-    </div>
-    <div id="music" class="root">
-        <p>如果你发现音乐不能播放的话,就等一会吧,它们需要加载</p>
-        <p>随着歌曲的增加,时间会越来越长</p>
-        <p>手机端不能使用embed和iframe,我也不知道为什么,可能是网易云那边的问题</p>
-        <p>之后会改善的</p>
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=1930832112&auto=0&height=60">
+    <div class="body">
+        <div class="row0">
+            <div class="card0">
+                <img src="./images/head.jpg" alt="似乎没有显示出来呢">
+                <p class="shadow-text">很有趣!</p>
+            </div>
         </div>
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=518894020&auto=0&height=60">
-        </div>
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=1930826595&auto=0&height=60">
-        </div>
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=2616057299&auto=0&height=60">
-        </div>
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=2602667125&auto=0&height=60">
-        <div class="box">
-            <embed border="1" width="75%" src="https://music.163.com/outchain/player?type=2&id=2036894489&auto=0&height=60">
+        <div class="row1">
+            <div id="boxs">
+                <div class="box">
+                    <a href="https://www.bilibili.com/video/BV1JRndeKEm3">〖速涂〗“哇！我的同学是防暴警察！”</a>
+                    <p>其实源作品是个视频,不过图画的也很棒,索性就直接搬过来了,之后可能截一些有代表性的图放在这里面吧,尽量从源网站那边src</p>
+                    <p>因为我懒得上传图</p>
+                    <p>不过作者画的作品还是超可爱的</p>
+                    <p>这件事可以说是略显抽象</p>
+                </div>
+                <div class="box">
+                    <a href="https://www.bilibili.com/video/BV19x411c7RP">【PV】promise／広瀬香美</a>
+                    <p>Get☆Down</p>
+                    <p>试着了解了一下这个梗的背景音乐</p>
+                    <p>生草程度远超我的想象</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="foot">
-    <p id="in">AT3K_CA copyright</p>
-    <button id="render">Render</button>
-    <button id="down">Down</button>
-</div>
-<script src="particle.js"></script>
-<script src="html_util.js"></script>
 </body>
 </html>

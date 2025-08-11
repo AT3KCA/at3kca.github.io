@@ -42,7 +42,7 @@ p:hover{
     display: flex;
 }
 .style0{
-    margin-right: 40%;
+    margin-right: 25%;
     border-radius: 5px 5px 5px 5px;
     transition: all 0.5s;
 }
@@ -62,7 +62,7 @@ p:hover{
 }
 
 .style1{
-    margin-right: 8%;
+    margin-right: 7%;
     border-radius: 5px 5px 5px 5px;
     transition: all 0.5s;
 }
@@ -108,6 +108,7 @@ p:hover{
 }
 .box:hover{
     transform: scale(1.02);
+    background-color: #17171799;
 }
 .box .title::before{
     content: "|";
@@ -168,7 +169,7 @@ p:hover{
     transition: all 0.3s;
 }
 #boxs h3:hover{
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: #f3ff7bcc 1px 0 5px;
 }
 #boxs a{
@@ -194,4 +195,19 @@ p a:hover{
 }
 .none_select{
     user-select: none;
+}
+.from-game:before{
+    content: "|";
+    color: #d066ee;
+    margin-right: 5px;
+}
+.fix-title{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #f3ff7b;
+    transition: all 0.3s;
+}
+.fix-title:hover{
+    font-size: 1.5em;
+    text-shadow: #f3ff7bcc 1px 0 10px;
 }
