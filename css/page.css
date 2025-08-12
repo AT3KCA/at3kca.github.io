@@ -177,7 +177,7 @@ p:hover{
     transition: all 0.3s;
 }
 #boxs a:hover{
-    color: #e0d55b;
+    color: #e05bd5;
     font-size: 19px;
 }
 
@@ -196,11 +196,19 @@ p a:hover{
 .none_select{
     user-select: none;
 }
+.colorful-a{
+    border-radius: 5px 5px 5px 5px;
+    transition: all 0.5s;
+}
+.colorful-a:hover{
+    background-color: #66e9ee33;
+}
 .from-game:before{
     content: "|";
     color: #d066ee;
     margin-right: 5px;
 }
+
 .fix-title{
     font-size: 1.25em;
     font-weight: bold;
