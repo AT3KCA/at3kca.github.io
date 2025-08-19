@@ -1,3 +1,4 @@
+#!/bin/bash
 time=$(date "+%Y/%m/%d")
 
 git status
