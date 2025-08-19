@@ -7,6 +7,11 @@ a {
 }
 p{
     white-space: pre-wrap;
+    user-select: none;
+    transition: all 0.3s;
+}
+p:hover{
+    text-shadow: #f3ff7bcc 1px 0 5px;
 }
 .background {
     position: fixed;
@@ -17,7 +22,7 @@ p{
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(50%) blur(9px);
+    filter: brightness(40%) blur(0px);
     z-index: -114514;
 }
 .gen_container {
@@ -37,7 +42,7 @@ p{
     display: flex;
 }
 .style0{
-    margin-right: 40%;
+    margin-right: 25%;
     border-radius: 5px 5px 5px 5px;
     transition: all 0.5s;
 }
@@ -57,7 +62,7 @@ p{
 }
 
 .style1{
-    margin-right: 8%;
+    margin-right: 7%;
     border-radius: 5px 5px 5px 5px;
     transition: all 0.5s;
 }
@@ -103,6 +108,7 @@ p{
 }
 .box:hover{
     transform: scale(1.02);
+    background-color: #17171799;
 }
 .box .title::before{
     content: "|";
@@ -119,6 +125,8 @@ p{
     display: inline;
 }
 
+
+/*card0 may be useless*/
 .card0{
     position: relative;
     border-radius: 15px 15px 15px 15px;
@@ -148,9 +156,11 @@ p{
 }
 
 
-#boxs img {
-    max-width: 100%;
+.box-img{
+    max-width: 95%;
 }
+
+/*boxs(id) style*/
 #boxs p{
     user-select: none;
     transition: all 0.3s;
@@ -163,7 +173,7 @@ p{
     transition: all 0.3s;
 }
 #boxs h3:hover{
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: #f3ff7bcc 1px 0 5px;
 }
 #boxs a{
@@ -171,25 +181,45 @@ p{
     transition: all 0.3s;
 }
 #boxs a:hover{
-    color: #e0d55b;
+    color: #e05bd5;
     font-size: 19px;
 }
 
-.shadow-text{
-    user-select: none;
-    transition: all 0.3s;
+.select-p{
+    user-select: text;
 }
-.shadow-text:hover{
-    text-shadow: #f3ff7bcc 1px 0 5px;
-}
-.shadow-text a{
+
+p a{
     color: #5eda85;
     transition: all 0.3s;
 }
-.shadow-text a:hover{
+p a:hover{
     color: #e0d55b;
     font-size: 19px;
 }
 .none_select{
     user-select: none;
+}
+.colorful-a{
+    border-radius: 5px 5px 5px 5px;
+    transition: all 0.5s;
+}
+.colorful-a:hover{
+    background-color: #66e9ee33;
+}
+.from-game:before{
+    content: "|";
+    color: #d066ee;
+    margin-right: 5px;
+}
+
+.fix-title{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #f3ff7b;
+    transition: all 0.3s;
+}
+.fix-title:hover{
+    font-size: 1.5em;
+    text-shadow: #f3ff7bcc 1px 0 10px;
 }
