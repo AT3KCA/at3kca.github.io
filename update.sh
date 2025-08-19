@@ -5,4 +5,4 @@ git add .
 
 git commit -m "update $time"
 
-gt push origin main
+git push origin main
