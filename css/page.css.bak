@@ -13,6 +13,33 @@ p{
 p:hover{
     text-shadow: #f3ff7bcc 1px 0 5px;
 }
+
+/*Grid Change Begin*/
+.container {
+  display: grid; 
+  grid-template-columns: 0.5fr 0.9fr 2.1fr 0.5fr; 
+  grid-template-rows: 0.2fr 1.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". gc-head gc-head ."
+    ". gc-left gc-right ."; 
+}
+.gc-head {
+	grid-area: gc-head; 
+	display: flex;
+	background-color: #171717CC;
+
+}
+.gc-left {
+	grid-area: gc-left;
+}
+.gc-right {
+	grid-area: gc-right;
+}
+
+
+/*Grid Change End*/
+
 .background {
     position: fixed;
     top: 0px;
@@ -82,17 +109,19 @@ p:hover{
 }
 
 .body{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 0.3fr 0.2fr repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+       }
+.grid-container{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 0.8fr 0.2fr 0.2fr  repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
-.body .row0{
+.grid-container .row0{
     grid-area: 1 / 1 / 6 / 3;
 }
-.body .row1{
+.grid-container .row1{
     grid-area: 1 / 4 / 6 / 7;
     flex-direction: column;
 }
@@ -103,7 +132,7 @@ p:hover{
     border-radius: 15px 15px 15px 15px;
     color: #ffffff;
     margin-bottom: 10px;
-    padding: 15px 0px 10px 15px;
+    padding: 15px 15px 15px 15px;
     transition: all 0.3s;
 }
 .box:hover{
@@ -126,41 +155,7 @@ p:hover{
 }
 
 
-/*card0 may be useless*/
-.card0{
-    position: relative;
-    border-radius: 15px 15px 15px 15px;
-    background-color: #171717CC;
-    width: 80%;
-    height: 450px;
-    padding: 10px;
-}
-.card0 p{
-    font-size: 20px;
-    color: #ffffff;
-}
-.card0 img{
-    border-radius: 15px 15px 15px 15px;
-    position: relative;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-}
-.card0 img:hover{
-    filter: brightness(80%);
-    transform: scale(0.98);
-}
-.card0 img:active{
-    transform: scale(0.95);
-}
 
-
-.box-img{
-    max-width: 95%;
-}
-
-/*boxs(id) style*/
 #boxs p{
     user-select: none;
     transition: all 0.3s;
@@ -168,6 +163,31 @@ p:hover{
 #boxs p:hover{
     text-shadow: #f3ff7bcc 1px 0 5px;
 }
+
+
+.ms_info{
+	
+}
+
+.ms_info img{
+	max-width: 100%;
+}
+
+.ms_info .nametag{
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+}
+
+
+
+
+.box-img{
+    max-width: 95%;
+}
+
+/*boxs(id) style*/
+
 #boxs h3{
     color: #f3ff7b;
     transition: all 0.3s;
@@ -176,14 +196,7 @@ p:hover{
     font-size: 1.5em;
     text-shadow: #f3ff7bcc 1px 0 5px;
 }
-#boxs a{
-    color: #5eda85;
-    transition: all 0.3s;
-}
-#boxs a:hover{
-    color: #e05bd5;
-    font-size: 19px;
-}
+
 
 .select-p{
     user-select: text;
