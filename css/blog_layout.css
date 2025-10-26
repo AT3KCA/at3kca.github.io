@@ -133,3 +133,6 @@ article_body .main img{
 daily{
     display: block;
 }
+daily img{
+    max-width: 100%;
+}
