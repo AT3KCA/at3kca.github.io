@@ -1,0 +1,135 @@
+:root{
+    --default-padding: 10px;
+
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -99;
+}
+#navigate{
+    z-index: 99;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    gap: 40px;
+}
+
+.container .head > a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container .head > a > img{
+    max-height: 35px;
+    width: auto;
+}
+.nav ul{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.nav ul>li{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline
+}
+
+#welcome{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+}
+#welcome .bottom{
+    position: static;
+    margin-bottom: 20px;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+
+}
+#content .left{
+    margin-left: 7vw;
+    width: 16vw;
+}
+#content .right{
+    margin-left: 3vw;
+    margin-right: 7vw;
+    width: 67vw;
+}
+
+
+
+.card{
+    width: 100%;
+    padding: var(--default-padding);
+    margin-bottom: 20px;
+}
+article{
+    position: relative;
+    height: 275px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+article .art-img a img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-width: 100%;
+    height: 215px;
+    object-fit: cover;
+    transition: all var(--tr-time) ease-in-out;
+}
+article .art-img a img:hover{
+    height: 275px;
+}
+article .art-date{
+}
+article .art-title{
+}
+article .art-info{
+}
+article .art-descript{
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+article_body .main img{
+    max-width: 100%;
+}
+
+daily{
+    display: block;
+}

@@ -1,51 +1,20 @@
-window.addEventListener("load",function(){
-    let down_btn = document.getElementById('down');
-    if (down_btn != null) {
-        down_btn.addEventListener('click', () => {
-            downBTN()
-        })
-    }
-})
-
-function downBTN() {
-    window.scrollTo(0, document.body.scrollHeight)
-}
-
-
-let inp
-let count = 0
-let timer
-let isEnd = false
-window.addEventListener('load', function () {
-    inp = document.getElementById('in');
-    if (!inp) {
-        return
-    }
-    inp.addEventListener('click', function () {
-        count++;
-        if (count >= 6) {
-            if (isEnd) {
-                return
-            }
-            isEnd = true;
-            inp.innerHTML = "<a class='hover_b' target='_blank' href='/the-hidden.html'>AT3K_CA copyright</a>";
-        }
-        if (!timer) {
-            timer = setTimeout(() => {
-                count = 0;
-                timer = null;
-            }, 2000);
-        }
-    });
-
-});
-
-
 function isHtmlTag(line) {
     let htmlTagPattern = /<("[^"]*"|'[^']*'|[^'">])*>/
     return htmlTagPattern.test(line);
 }
 
+var e_pos_mark_up = document.getElementById("pos_mark_up");
+function scroll_up(){
+    e_pos_mark_up.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+var e_pos_mark_down = document.getElementById("pos_mark_down");
+function scroll_down(){
+    e_pos_mark_down.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
 function load_text(name) {
 
@@ -63,11 +32,11 @@ function load_text(name) {
     }
     http.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            div.innerHTML = ""
+            div.innerHTML = "";
             let ps = http.responseText.split("#End_HTP");
             for (let i = 0; i < ps.length; i++) {
-                let box = document.createElement("div");
-                box.className = "box";
+                let box = document.createElement("daily");
+                box.className = "card bg-black font-20";
 
                 let ls = ps[i].split("\n");
 
@@ -89,4 +58,5 @@ function load_text(name) {
         }
     }
     console.log("loaded document:", name);
+    setTimeout(scroll_down,500);
 }

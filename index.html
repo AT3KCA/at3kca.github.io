@@ -2,59 +2,66 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/page.css">
-    <title>Index</title>
+    <title>Blog - Index</title>
+    <link rel="icon" type="image/png" href="img/head.webp">
+    <link rel="stylesheet" href="css/blog_layout.css">
+    <link rel="stylesheet" href="css/blog_theme.css">
 </head>
 <body>
-<div class="background"></div>
-<div class="container">
-	<div class="gc-head none_select">
-		<div class="style0">
-			<a href="index.html">AT3K_CA</a> # <a target="_blank" href="https://space.bilibili.com/1856254417">Bilibili</a>
-       		</div>
-        	<div class="style1">
-            		<a href="daily.html">Daily</a>
-        	</div>
-        	<div class="style1">
-            		<a href="AnotherWorld.html">Anime Girls</a>
-        	</div>
-        	<div class="style1">
-            		<a href="misc.html">Misc</a>
-        	</div>
-       		<div class="style1">
-            		<a target="_blank" href="https://space.bilibili.com/1856254417">About</a>
-       		</div>			
-	</div>
-	<div class="gc-left">
-            	<div class="box">
-	  		<div class="ms_info">
-				<img src="images/head.jpg" alt="似乎没有显示出来呢">
-                		<div class="nametag"><p>AT3K_CA</p></div>
-			</div> 
-            	</div>
-	    	<div class="box">
-	    		<p>2025/8/25 更新了页面的布局</p>
-			<p>我的确在模仿<a target="_blank" href="https://www.2x.nz/">[AcoFork Blog]</a>因为能力的问题,还在改进</p>
-	    	</div>
+<div id="background" class="pos-fixed"></div>
+<div id="navigate" class="nav pos-sticky-0">
+    <div class="container">
+        <div class="head">
+            <a href="index.html">
+                <img src="img/head.webp">AT3K_CA
+            </a>
         </div>
-
-	<div class="gc-right">
-		<div class="box">
-                	<a class="title style1">
-                   	<h3>介绍</h3>
-                	</a>
-                	<p>如果你想关注AT3K_CA接下来的发展,可以试着收藏下来</p>
-            	</div>
-		<div class="box">
-			<a href="daily.html">[Daily - 日志]</a>
-		</div>
-		<div class="box">
-			<a href="AnotherWorld.html">[AW - 其它地方的人们]</a>
-		</div>
-		<div class="box">
-			<a href="misc.html">[Misc - 杂项]</a>
-		</div>
-	</div>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="daily.html">日志</a></li>
+            <li>列表</li>
+            <li><a href="https://space.bilibili.com/1856254417">Bilibili</a></li>
+            <li>关于</li>
+        </ul>
+    </div>
 </div>
+<section id="welcome" class="h-auto">
+    <div class="title font-20">
+        <p class="font-50 tr-color-red">AT3K_CA 日志页</p>
+        <p>我的意思是 :</p>
+    </div>
+    <p onclick="scroll_up()" class="bottom font-20 clickable cant-select">Next</p>
+</section>
+<pos_mark id="pos_mark_up"></pos_mark>
+<section id="content">
+    <aside class="left flex-column">
+        <div class="pos-sticky-70">
+            <div class="card bg-white">
+                <h1>AT3K_CA</h1>
+                <p>东方非想天则</p>
+                <p>Galgame</p>
+                <p>搓一些不知所云的东西</p>
+                <p>比如这个页面</p>
+                <p>单休高中生</p>
+            </div>
+        </div>
+    </aside>
+    <aside class="right flex-column">
+        <article class="flex-column">
+            <div class="art-img">
+                <a href="#"><img class="radius-up" src="img/blog_bg.png"></a>
+            </div>
+            <div class="art-title font-20 padding radius tr-color-green">这里的页面在2025/10/25构建完成</div>
+            <div class="art-info padding radius flex-row">
+                <p class="font-16">2025/10/25</p>
+                <p class="font-16">-=-</p>
+                <p class="font-16">AT3K_CA完全手写的</p>
+            </div>
+            <div class="art-descript bg-black-ex padding radius-down">IntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodcIntrodce</div>
+        </article>
+    </aside>
+</section>
+<pos_mark id="pos_mark_down"></pos_mark>
+<script text="text/javascript" src="html_util_new.js"></script>
 </body>
 </html>

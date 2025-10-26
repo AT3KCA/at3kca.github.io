@@ -1,0 +1,205 @@
+:root{
+    --tr-time: 0.3s;
+    --font-color: #ebebebe5;
+    --bg-radius: 10px;
+    --color-red: #ff7373e6;
+    --color-green: #73ff73e6;
+    --color-blue: #7373ffe6;
+    --bg-white: #ffffff33;
+    --bg-white-ex: #ffffff66;
+    --bg-black: #00000066;
+    --bg-black-ex: #00000099;
+    --nav-height: 70px;
+    --font-white: #ffffffe6;
+}
+@font-face {
+    font-family: '思源黑体';
+    src: url('../font/SourceHanSansSC-Regular-2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.pos-fixed{
+    position: fixed;
+}
+.pos-abs{
+    position: absolute;
+}
+.pos-sticky-0{
+    position: sticky;
+    top: 0px;
+}
+.pos-sticky-70{
+    position: sticky;
+    top: 70px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-50{
+    font-size: 50px;
+}
+.h-20vh{
+    height: 20vh;
+}
+.h-auto{
+    height: calc(100vh - var(--nav-height));
+}
+.tr-color-red{
+    transition: all var(--tr-time) ease;
+}
+.tr-color-red:hover{
+    color: var(--color-red);
+    text-shadow: 0 0 5px var(--color-red);
+}
+.tr-color-green{
+    transition: all var(--tr-time) ease;
+}
+.tr-color-green:hover{
+    color: var(--color-green);
+    text-shadow: 0 0 5px var(--color-red);
+}
+.tr-color-blue{
+    transition: all var(--tr-time) ease;
+}
+.tr-color-blue:hover{
+    color: var(--color-blue);
+    text-shadow: 0 0 5px var(--color-red);
+}
+
+.clickable{
+    cursor: url('../cursor/Hand.cur'),auto;
+}
+.cant-select{
+    user-select: none;
+}
+
+.padding{
+    padding: var(--default-padding);
+}
+
+.bg-white{
+    background-color: var(--bg-white);
+}
+.bg-white-ex{
+    background-color: var(--bg-white-ex);
+}
+.bg-black{
+    background-color: var(--bg-black);
+}
+.bg-black-ex{
+    background-color: var(--bg-black-ex);
+}
+.align-center{
+    align-items: center;
+}
+.inline{
+    display: inline;
+}
+.radius{
+    border-radius: var(--bg-radius);
+}
+.radius-up{
+    border-radius: var(--bg-radius) var(--bg-radius) 0 0;
+}
+.radius-down{
+    border-radius: 0 0 var(--bg-radius) var(--bg-radius);
+}
+p{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+a{
+    transition: all var(--tr-time) ease;
+}
+a:link{
+    text-decoration: none;
+} /* 未访问的链接 */
+a:visited{
+    text-decoration: none;
+} /* 已访问的链接 */
+a:hover{
+    color: #ffffff;
+} /* 鼠标悬浮状态 */
+a:active{
+    color: yellow;
+} /* 激活状态 */
+
+*,::after,::before{
+    color: var(--font-color);
+    font-family: "思源黑体";
+    cursor: url('../cursor/Arrow.cur'),auto;
+}
+
+
+#background{
+    background: inherit;
+    background-image: url("../img/blog_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+}
+
+#navigate{
+    /* background-color: #ffffff32; 可选样式*/
+}
+
+.container .head > a > img{
+    border-radius: var(--bg-radius);
+}
+
+.nav ul{
+    border: 1px solid #ffffff;
+    border-radius: var(--bg-radius);
+    list-style-type: none;
+}
+
+.card{
+    border-radius: var(--bg-radius);
+}
+
+article{
+    transition: all var(--tr-time) ease-in-out;
+}
+article:hover{
+    transform: translateY(5px) translateX(15px);
+}
+article .art-title{
+    color: var(--font-white);
+    transition: all var(--tr-time) ease-in-out;
+}
+article .art-title:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+article .art-img:hover *{
+    border-radius: var(--bg-radius);
+}
+article .art-info{
+    font-size: 20px;
+}
+article .art-descript,.art-descript *{
+    word-break: break-all;
+    line-height: 1.5;
+}
