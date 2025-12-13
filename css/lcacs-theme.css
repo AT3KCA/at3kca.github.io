@@ -1,0 +1,77 @@
+:root{
+    --card-color: #000000b3;
+    --main-color-a: #ff7e7e4d;
+    --main-color: #ff6464;
+    --text-a5-color: #c8c8c8;
+    --radius-large: 1rem;
+}
+@font-face {
+    font-family: '思源黑体';
+    src: url('/font/SourceHanSansSC-Regular-2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    color: #e6e6e6;
+    font-family: "思源黑体";
+    font-size: 1rem;
+    cursor: url('/cursor/Arrow.cur'),auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h1::before{
+    content: "|";
+    position: relative;
+    left: -1rem;
+    color: var(--main-color);
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    color: #d1d5db;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+.background{
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    filter: brightness(0.85);
+}
+
+.card-base {
+    background-color: var(--card-color);
+    backdrop-filter: blur(3px);
+    border-radius: var(--radius-large);
+}
+.main-color{
+    color: var(--main-color);
+}
+.a5-color{
+    color: var(--text-a5-color);
+}
+.bg-main-color{
+    background-color: var(--main-color);
+}
+.btn-plain:hover{
+    background-color: var(--main-color-a);
+}
+
+blockquote{
+    padding: 0.5rem;
+    margin-left: 2rem;
+    background-color: var(--main-color-a);
+}
+blockquote p{
+    margin: 0;
+    color: var(--main-color);
+}

@@ -1,0 +1,47 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+:root{
+    --page-width: 75rem;
+}
+.background{
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.main-container{
+
+}
+.head-container{
+
+}
+header{
+    height: 70px;
+    width: 100%;
+}
+aside{
+}
+main{
+}
+img{
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+.card-base{
+    overflow: hidden;
+}
+
+
+.btn-plain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    user-select: none;
+}
