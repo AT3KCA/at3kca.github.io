@@ -1,0 +1,125 @@
+.blur-box {
+	background-color: var(--background-color);
+	backdrop-filter: blur(var(--blur-filter));
+}
+
+.default-box-s {
+	border-radius: var(--border-radius);
+	padding: var(--padding-0);
+}
+.default-box-l {
+	border-radius: var(--border-radius);
+	padding: var(--padding-1);
+}
+
+.archive-link {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-s);
+	border: 1px solid var(--highlight-color);
+	margin-bottom: var(--gap-l);
+}
+.inlinebox{
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap-l);
+	align-items: center;
+}
+.archive-link p {
+	margin-top: var(--gap-s);
+	margin-bottom: var(--gap-s);
+}
+.archive-link a,
+.archive-link a:link,
+.archive-link a:visited {
+	margin: 0;
+	padding: 0;
+	font-size: 1.55rem;
+	transition: all 0.3s;
+	color: var(--foreground);
+	text-decoration: none;
+}
+.archive-link a:hover {
+	color: var(--highlight-color);
+	text-decoration: underline;
+}
+.archive-link a:active {
+	color: var(--r-highlight-color);
+}
+
+.svg-icon {
+	width: 24px;
+	height: 24px;
+	color: var(--icon-color);
+	transition: all 0.3s;
+	flex-shrink: 0;
+}
+
+.svg-icon:hover{
+	color: var(--r-icon-color);
+}
+
+.content * {
+	line-height: 28px;
+}
+.content p {
+	margin-top: var(--gap-l);
+	margin-bottom: var(--gap-l);
+}
+.content a,
+.content a:link,
+.content a:visited {
+	transition: all 0.3s;
+	color: var(--highlight-color);
+	text-decoration: underline;
+}
+.content a:hover {
+	color: var(--r-highlight-color);
+}
+.content a:active {
+	text-decoration: underline;
+}
+
+.content h1,h2,h3,h4 {
+	padding-bottom: var(--gap-m);
+}
+.content h1 {
+	border-bottom: 1px solid #ebb5ffb2; 
+}
+.content h2 {
+	border-bottom: 1px solid #ffd8b5b2; 
+}
+.content h3 {
+	border-bottom: 1px solid #b5fff8b2; 
+}
+.content h4 {
+	border-bottom: 1px solid #d3b5ffb2; 
+}
+.content pre {
+	padding: var(--gap-m);
+	border-radius: var(--border-radius);
+	background-color: var(--dark-highlight-color-alpha); 
+}
+
+.border-l {
+	width: 2rem;
+	height: 0.25rem;
+	background-color: var(--highlight-color);
+	border-radius: var(--border-radius);
+}
+.border-v {
+	width: 0.25rem;
+	height: 2rem;
+	background-color: var(--highlight-color);
+	border-radius: var(--border-radius);
+}
+
+.svg-botton {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	background-color: var(--dark-highlight-color);
+	border-radius: var(--border-radius);
+}

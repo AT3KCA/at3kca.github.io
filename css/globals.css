@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: var(--dark-color);
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--background: #171717;
+	--foreground: #e6e6e6;
+	--iv-color: #bdbdbd;
+	--page-width: 75rem;
+	--left-width: 17.5rem;
+	--border-radius: 0.5rem;
+	--background-color: #171717B0;
+	--icon-color: #ffbff6;
+	--r-icon-color: #e5ffbf;
+	--highlight-color: #ffbff6;
+	--r-highlight-color: #e5ffbf;
+	--highlight-color-y: #fff5bf;
+	--r-highlight-color-y: #caffbf;
+	--default-gap: 1.5rem;
+	--gap-l: 1rem;
+	--gap-m: 0.5rem;
+	--gap-s: 0.25rem;
+	--padding-0: 0.5rem;
+	--padding-1: 1rem;
+	--blur-filter: 10px;
+	--dark-color: #24242460;
+	--dark-highlight-color: #543550;
+	--dark-highlight-color-alpha: #5435507d;
+	--pre-dark-color: #7d7d7d8f;
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: normal;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+em, strong {
+	border-radius: var(--border-radius);
+	color: var(--highlight-color-y);
+	transition: all 0.3s;
+}
+em:hover,
+strong:hover {
+	color: var(--r-highlight-color-y);
+}
+
+strong {
+	font-weight: 500;
+}
+blockquote {
+    background-color: var(--dark-color);
+    padding-left: var(--gap-m);
+    border-left: 0.2rem solid var(--pre-dark-color);
+    margin: 0 var(--gap-m);
+}
+blockquote p {
+	margin: 0;
+	padding: var(--gap-s) 0;
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+}
