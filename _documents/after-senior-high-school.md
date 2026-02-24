@@ -38,3 +38,4 @@ tags: ['university','Daily']
 
 - [ ] 以后写文档说明我的想法，并加入实现思路
 - [ ] [三角圆舞曲 -Triple Pairing- BilibiliOP](https://www.bilibili.com/video/BV1vBcjzsEbP) HOOKSOFT 2026/5/29新作
+- [ ] 找出HOOK系Galgame的素材服用并写成文档
