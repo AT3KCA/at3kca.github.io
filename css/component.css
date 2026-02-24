@@ -1,0 +1,128 @@
+.header {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-radius: var(--border-radius);
+	background-color: var(--background-color);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: var(--default-gap);
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: blur(var(--blur-filter));
+}
+
+.background {
+	z-index: -10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('/img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*Unuse*/
+.bgOverlay {
+	z-index: -9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(1px);
+}
+
+.mainContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: var(--page-width);
+	
+	min-height: 100vh;
+}
+
+.main .left {
+	position: sticky;
+	top: 1rem;
+	grid-area: left;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-l);
+}
+.main .right{
+	grid-area: right;
+}
+.main {
+	display: grid;
+	grid-template-columns: var(--left-width) auto; /*minmax(0,1.5fr);*/
+	grid-template-areas: "left right";
+	gap: var(--default-gap);
+	align-items: start;
+}
+@media screen and (max-width: 1024px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"right"
+			"left";
+		gap: var(--default-gap);
+		align-items: start;
+	}
+	.main .left {
+		grid-area: left;
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-l);
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-m);
+	align-items: center;
+}
+.intro .head {
+	max-width: none;
+	width: 100%;
+}
+@media screen and (max-width: 1024px) {
+	.intro .head {
+		max-width: 12rem;
+	}
+}
+.intro .head img {
+	border-radius: var(--border-radius);
+	max-height: 100%;
+	filter: brightness(0.9);
+	width: 100%;
+}
+.intro .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--gap-l);
+}
+.intro .info .name {
+	font-size: 1.25rem;
+}
+.intro .info .motd {
+	color: var(--iv-color);
+}
+.intro .info .socials {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: var(--gap-m);
+	justify-content: center;
+}

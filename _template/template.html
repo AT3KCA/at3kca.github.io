@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OCS - {{title}}</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/globals.css">
+	<link rel="stylesheet" href="/css/component.css">
+	<link rel="stylesheet" href="/css/preset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="background"></div>
+<!-- <div class="bgOverlay"></div> -->
+<div class="mainContainer">
+	<header class="header">
+		<p>OCS-Origin</p>
+		<div>
+			<a>Link1</a>
+			<a>Link2</a>
+			<a>Link3</a>
+		</div>
+		<p>Ciallo</p>
+		<svg class="svg-icon"><use href="/svg/icons.svg#check"></use></svg>
+	</header>
+	<main class="main">
+		<div class="blur-box default-box-l left">
+			<!--这里填充左栏的个人信息-->
+			{{leftbar}}
+		</div>
+		<div class="blur-box default-box-l right">
+			<div>
+				{{children}}
+			</div>
+		</div>
+	</main>
+</div>
+</body>
+</html>
