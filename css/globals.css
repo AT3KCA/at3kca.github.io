@@ -45,8 +45,8 @@ body {
 }
 
 pre {
-	white-space: pre-wrap;
-	word-wrap: normal;
+	white-space: pre-line; /*pre-wrap*/
+	word-wrap: anywhere; /*normal*/
 	max-width: 100%;
 	overflow-x: auto;
 }
