@@ -23,3 +23,5 @@ WjEVQ7y+flZpB6yEa8pRWo2pzRlBjRmJMWebzcQLYltBb1jSiT/I5DXLBGb9TuLo
 LEi26L00fdwH3V2a6b25RHUCAwEAAQ==
 -----END PUBLIC KEY-----
 ```
+
+你想和我交换 **RSA公钥** 吗？我觉得这会相当有意思。把每一份公钥进行分类，标记，超过了直接挂载友联的便利，但感觉总是非常奇怪的。
