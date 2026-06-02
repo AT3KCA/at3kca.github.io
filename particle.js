@@ -8,8 +8,8 @@ ctx.fillStyle = '#17171700';
 
 let particles = [];
 let mouse = {
-    x: -500,
-    y: -500
+    x: window.screen.width / 2,
+    y: window.screen.height / 3
 };
 document.addEventListener("mousemove", function (event) {
     mouse.x = event.x;
