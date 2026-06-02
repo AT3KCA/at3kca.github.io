@@ -5,6 +5,12 @@
 html {
 	font-size: 17px;
 }
+#canvas {
+	z-index: -100;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -71,6 +77,7 @@ strong {
 </style>
 </head>
 <body class="background">
+<canvas id="canvas"></canvas>
 <div class="container">
 	<div class="border">
 	<h1>at3kca.github.io</h1>
@@ -83,5 +90,6 @@ strong {
 	<p>Java</p>
 	</div>
 </div>
+<script src="./particle.js"></script>
 </body>
 </html>
