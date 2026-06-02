@@ -1,91 +1,7 @@
 <html>
 <head>
 <title>AT3K_CA Present</title>
-<style>
-html {
-	font-size: 17px;
-}
-#canvas {
-	z-index: -100;
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-}
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	color: #e6e6e6;
-}
-.background {
-	background-color: #161616;
-}
-.container {
-	margin: 1rem auto 0 auto;
-	max-width: 70rem;
-	display: flex;
-	flex-direction: column;
-}
-.border {
-	margin: 0 1rem;
-	padding: 0.5 1rem;
-	border: solid 1px #b5fff85b;
-	border-radius: 0.5rem;
-}
-h1,h2,h3 {
-	margin: 0.7rem 0 0.5rem 0;
-	color: #e5ffbf;
-	font-weight: 700;
-	user-select: none;
-	transition: all 0.15s;
-}
-h1:hover,
-h2:hover,
-h3:hover {
-	text-shadow: 0px 0px 10px #b5fff8A0;
-}
-hr {
-	width: 95%;
-	margin: 0 auto;
-	height: 1px;
-	color: #ffbff65c;
-}
-.s1 {
-	border-bottom: 1px solid #ebb5ffb2; 
-}
-.s2 {
-	border-bottom: 1px solid #ffd8b5b2; 
-}
-
-p {
-	line-height: 1.5;
-	margin: 0.9rem 0 0.9rem 0;
-	transition: all 0.15s;
-}
-p:hover {
-	text-shadow: 0px 0px 10px #00FFB7A0;
-}
-
-a,
-a:link,
-a:visited {
-	transition: all 0.3s;
-	color: #ffbff6;
-	text-decoration: underline;
-}
-a:hover {
-	color: #e5ffbf;
-}
-a:active {
-	text-decoration: underline;
-}
-
-strong {
-	font-weight: normal;
-	color: #caffbf;
-}
-
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body class="background">
 <canvas id="canvas"></canvas>
@@ -99,6 +15,10 @@ strong {
 	<p>去打Galgame吧，或者非想天则？还是写点什么没用的程序。</p>
 	<p>说到Galgame，针对我玩的废萌，我推荐<strong>HOOKSOFT</strong> <strong>ASa Project</strong> 以及 <strong>SMEE</strong>。相信会给玩家带来预期内的体验。</p>
 	<p>Java</p>
+	<h2>页面？</h2>
+	<p>还可以再介绍一下页面，这里的p标签，标题都用css的text-shadow处理过，用hover伪类使得其在被光标关注的时候可以发光，这种会发光的东西我比较喜欢。</p>
+	<p>a标签会变色，可谓是十分生动了。</p>
+	<p>有个带圆角的边框和有颜色的hr分隔符，大抵是增加内容层次了罢</p>
 	</div>
 </div>
 <script src="./particle.js"></script>
