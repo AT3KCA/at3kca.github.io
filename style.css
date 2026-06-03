@@ -40,12 +40,14 @@ h2:hover,
 h3:hover {
 	text-shadow: 0px 0px 10px #b5fff8A0;
 }
+
 hr {
 	width: 95%;
 	margin: 0 auto;
 	height: 1px;
 	color: #ffbff65c;
 }
+
 .s1 {
 	border-bottom: 1px solid #ebb5ffb2; 
 }
@@ -59,7 +61,7 @@ p {
 	transition: all 0.15s;
 }
 p:hover {
-	text-shadow: 0px 0px 10px #00FFB7A0;
+	text-shadow: 0px 0px 10px #00FFB7A5;
 }
 
 a,
