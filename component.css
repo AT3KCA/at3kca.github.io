@@ -1,0 +1,38 @@
+html {
+	font-size: 17px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #e6e6e6;
+}
+
+#canvas {
+	z-index: -100;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+.background {
+	background-color: #161616;
+}
+.container {
+	margin: 1rem auto 0 auto;
+	max-width: 70rem;
+	display: flex;
+	flex-direction: column;
+}
+.border {
+	margin: 0 1rem;
+	padding: 0.5 1rem;
+	border: solid 1px #b5fff85b;
+	border-radius: 0.5rem;
+}
+
+.s1 {
+	border-bottom: 1px solid #ebb5ffb2; 
+}
+.s2 {
+	border-bottom: 1px solid #ffd8b5b2; 
+}

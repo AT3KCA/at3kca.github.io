@@ -71,15 +71,15 @@ class particle {
     }
 
     draw() {
-        if (isDraw) {
-            ctx.beginPath(); 
-            ctx.arc(this.x, this.y, 1, 0, Math.PI * 2);
-            ctx.fill();
-        }
+		/*if (isDraw) {
+			ctx.beginPath(); 
+			ctx.arc(this.x, this.y, 1, 0, Math.PI * 2);
+			ctx.fill();
+		}*/
     }
 }
 
-function drawLineP(x1, y1, x2, y2, mx, my) {
+function drawLineP(x1, y1, x2, y2) {
     let dx = x1 - x2;
     let dy = y1 - y2;
     let squareDistance = dx * dx + dy * dy;
