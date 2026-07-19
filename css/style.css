@@ -93,3 +93,10 @@ del {
 .postHeader {
 	margin-bottom: 1rem;
 }
+
+#canvas {
+	z-index: -2;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
