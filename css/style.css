@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 17px;
+	color: #e6e6e6;
+}
+
+canvas {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	pointer-events: none;
+}
+
+body {
+	background-color: #171717;
+	display: flex;
+}
+
+.rootContainer {
+	margin: 0 auto;
+	padding: 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.box {
+	padding: 1rem;
+	width: 100%;
+	transition: all 0.2s ease;
+	border-bottom: 1px solid red;
+}
+.box:hover {
+	border-bottom: 1px solid green;
+}
+
+.box h1 {
+	
+}
+.box h1:hover {
+
+}
+
+.box p {
+
+}
+.box p:hover {
+
+}
+
+.box a {
+
+}
+.box a:hover {
+
+}
