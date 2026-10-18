@@ -1,3 +1,21 @@
+:root {
+	--font-size: 18px;
+	--background-color: #171717;
+	--foreground-color: #e6e6e6;
+	
+	--box-border-inactive: #686868cc;
+	--box-border-active: #1dc26dcc;
+	--light: #58ffe860;
+
+	--h1-color-inactive: #3fba7bcc;
+	--h1-color-active: #4fe99aee;
+
+	--p-color-inactive: #e6e6e6cc;
+	--p-color-active: #e6e6e6ee;
+
+	--a-color-link-inactive: #e6e6e6;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,8 +23,8 @@
 }
 
 html {
-	font-size: 17px;
-	color: #e6e6e6;
+	font-size: var(--font-size);
+	color: var(--foreground-color);
 }
 
 canvas {
@@ -20,7 +38,7 @@ canvas {
 }
 
 body {
-	background-color: #171717;
+	background-color: var(--background-color);
 	display: flex;
 }
 
@@ -36,28 +54,54 @@ body {
 	padding: 1rem;
 	width: 100%;
 	transition: all 0.2s ease;
-	border-bottom: 1px solid red;
+	border-bottom: 2px solid var(--box-border-inactive);
 }
 .box:hover {
-	border-bottom: 1px solid green;
+	transform: scale(1.01);
+	border-bottom: 2px solid var(--box-border-active);
+}
+
+h1 {
+	margin: 0.25rem 0;
+}
+p {
+	margin: 0.5rem 0;
+	word-wrap: break-word;
+	word-break: break-all;
+	line-height: 1.5;
 }
 
 .box h1 {
-	
+	transition: all 0.2s ease;
+	color: var(--h1-color-inactive);
 }
 .box h1:hover {
-
+	text-shadow: 0 0 1rem var(--light);
+	color: var(--h1-color-active);
 }
+
 
 .box p {
-
+	color: var(--p-color-inactive);
+	transition: all 0.2s ease;
 }
 .box p:hover {
-
+	color: var(--p-color-active);
+	text-shadow: 0 0 1rem var(--light);
 }
 
 .box a {
-
+	text-decoration: underline;
+	color: var(--a-color-link-inactive);
+}
+.box a:before {
+	content: '';
+}
+.box a:after {
+	content: '';
+}
+.box a:active {
+	text-decoration: underline;
 }
 .box a:hover {
 
